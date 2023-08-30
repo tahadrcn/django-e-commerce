@@ -1,0 +1,24 @@
+{% extends "navbar.html" %}
+<title>{% block title %} Details {% endblock %}</title>
+
+{% block mainpage %}
+
+    	<div class="container mt-5 mb-5">
+		<div class="card border-0">
+			<div class="container-fliud">
+				<div class="wrapper row">
+					<div class="preview col-md-6">
+						  <img class="w-75" src={{ prdct.product_image }} />
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title mb-5">{{ prdct.product_name }}</h3>
+						<p class="product-description mb-5">{{ prdct.product_description }}</p>
+						<h4 class="price">Fiyat: <span>{{ prdct.product_price }}₺</span></h4>
+                        <a href="{% url 'cart_add_sepet' id=prdct.id %}" type="button" class="btn btn-outline-success">Sepete Ekle</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

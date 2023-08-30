@@ -1,0 +1,12 @@
+.change-add {
+          transition: all 0.1s;
+        -webkit-transition: all 0.1s ease-in-out;
+      }
+      .change-remove {
+          transition: all 0.8s;
+        -webkit-transition: all 0.8s ease-in-out;
+      }
+      .change {
+        background-color: red!important;
+        transform: scale(1.5);
+      }
